@@ -1,0 +1,68 @@
+// ########## Basics ##########
+author					= "FoxForce";
+onLoadName				= "Fox Force Sandbox";
+onLoadMission			= "Partum, et Conteret";
+overviewText			= "Fox Force Sandbox";
+onLoadIntroTime			= 0; 
+onLoadMissionTime		= 0; 
+onLoadIntro 			="Fox Force Sandbox";
+
+class Header
+{
+	gameType				= COOP;
+	minPlayers				= 1;
+	maxPlayers				= 40;
+	playerCountMultipleOf	= 1;
+};
+
+// ########## Misc ##########
+saving					= 0; 
+enableTeamSwitch		= 1;
+disabledAI				= 1;
+joinUnassigned			= 1; 
+enableItemsDropping		= 0; 
+aiKills					= 0;
+enableDebugConsole		= 1;
+allowFunctionsLog		= 0;
+allowFunctionsRecompile	= 0;
+skiplobby               = 0; 
+disableChannels[]		={0, 2, 4, 5, 6};
+
+showHUD[] = 
+{
+	true,	// Scripted HUD (same as showHUD command)
+	true,	// Vehicle + soldier info
+	true,	// Vehicle radar [HIDDEN]
+	true,	// Vehicle compass [HIDDEN]
+	true,	// Tank direction indicator
+	true,	// Commanding menu
+	false,	// Group Bar
+	true	// HUD Weapon Cursors (and scroll menu)
+};
+
+// ########## Respawning ##########
+respawn					= 3;
+respawnDelay			= 5;
+respawnDialog			= 0;
+respawnOnStart			= 0;
+respawnButton 			= 1;
+respawnTemplatesWest[] = {"Base"};
+respawnTemplatesEast[] = {"Base"};
+respawnTemplatesGuer[] = {"Base"};
+respawnTemplatesCiv[] = {"Base"};
+
+// ########## Cleanup ##########
+corpseManagerMode		= 0;
+corpseLimit				= 15;
+corpseRemovalMinTime	= 600;
+corpseRemovalMaxTime	= 900;
+
+wreckManagerMode		= 0;
+wreckLimit				= 5;
+wreckRemovalMinTime		= 600;
+wreckRemovalMaxTime		= 900;
+
+// ########## Includes ##########
+#include "scr\ATM_airdrop\dialog.hpp"
+
+

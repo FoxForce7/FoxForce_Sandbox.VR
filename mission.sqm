@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=10;
 	};
 	class Camera
 	{
@@ -30,19 +30,11 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Characters_F",
 	"A3_Weapons_F_Exp_Rifles_SPAR_01",
-	"cba_jr",
-	"ace_realisticnames",
 	"A3_Weapons_F_Acc",
-	"ace_scopes",
 	"A3_Weapons_F_Exp",
 	"A3_Weapons_F_Mark_Acc",
 	"A3_Weapons_F",
-	"ace_ballistics",
-	"ace_optics",
 	"A3_Weapons_F_Items",
-	"ace_medical",
-	"ff7_compat_ace",
-	"ace_explosives",
 	"A3_Weapons_F_Orange",
 	"A3_Structures_F_Civ_Lamps",
 	"A3_Props_F_Orange_Humanitarian_Supplies",
@@ -52,7 +44,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=11;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -90,88 +82,40 @@ class AddonsMetaData
 		};
 		class Item5
 		{
-			className="cba_jr";
-			name="Community Base Addons - Joint Rails";
-			author="CBA Team";
-			url="https://www.github.com/CBATeam/CBA_A3";
-		};
-		class Item6
-		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
-		{
-			className="ace_scopes";
-			name="ACE3 - Scopes";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item8
+		class Item6
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
-		{
-			className="ace_ballistics";
-			name="ACE3 - Ballistics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item10
-		{
-			className="ace_optics";
-			name="ACE3 - Optics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item11
-		{
-			className="ace_medical";
-			name="ACE3 - Medical";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item12
-		{
-			className="ff7_compat_ace";
-			name="FoxForce7ACE3 Compatibility";
-			author="FoxForce7";
-		};
-		class Item13
-		{
-			className="ace_explosives";
-			name="ACE3 - Explosives";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item14
+		class Item7
 		{
 			className="A3_Weapons_F_Orange";
 			name="Arma 3 Orange - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item8
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item9
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item10
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
@@ -788,7 +732,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={3389.3857,5.8253026,1551.0555};
-								angles[]={-0,2.3860571,0};
+								angles[]={0,2.3860571,0};
 							};
 							side="Empty";
 							flags=4;
@@ -828,7 +772,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={3385.8877,5.8253026,1547.6766};
-								angles[]={-0,2.3860571,0};
+								angles[]={0,2.3860571,0};
 							};
 							side="Empty";
 							flags=4;
@@ -6344,7 +6288,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3390.9961,5.2069721,1545.4598};
-				angles[]={-0,3.9367821,0};
+				angles[]={0,3.9367821,0};
 			};
 			side="Empty";
 			flags=4;
@@ -6398,7 +6342,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={3391.6831,5.9688811,1549.4985};
-								angles[]={-0,1.1544479,0};
+								angles[]={0,1.1544479,0};
 							};
 							side="Empty";
 							flags=4;

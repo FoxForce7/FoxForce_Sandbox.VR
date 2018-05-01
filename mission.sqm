@@ -8,18 +8,18 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=111;
+		nextID=193;
 	};
 	class LayerIndexProvider
 	{
-		nextID=10;
+		nextID=20;
 	};
 	class Camera
 	{
-		pos[]={3409.4163,15.23038,1538.4926};
-		dir[]={-0.9693259,-0.11938207,0.21505234};
-		up[]={-0.11657606,0.99284571,0.025862839};
-		aside[]={0.21660256,9.0606045e-007,0.97631133};
+		pos[]={3403.6626,21.773901,1536.8226};
+		dir[]={-0.93291229,-0.35926637,-0.02705681};
+		up[]={-0.35915595,0.93322027,-0.010415847};
+		aside[]={-0.02899142,1.0615977e-006,0.99964947};
 	};
 };
 binarizationWanted=0;
@@ -30,11 +30,18 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Characters_F",
 	"A3_Weapons_F_Exp_Rifles_SPAR_01",
+	"cba_jr",
+	"ace_realisticnames",
 	"A3_Weapons_F_Acc",
+	"ace_scopes",
 	"A3_Weapons_F_Exp",
 	"A3_Weapons_F_Mark_Acc",
 	"A3_Weapons_F",
+	"ace_ballistics",
+	"ace_optics",
 	"A3_Weapons_F_Items",
+	"ace_medical",
+	"ace_explosives",
 	"A3_Weapons_F_Orange",
 	"A3_Structures_F_Civ_Lamps",
 	"A3_Props_F_Orange_Humanitarian_Supplies",
@@ -44,7 +51,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=11;
+		items=17;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -82,40 +89,82 @@ class AddonsMetaData
 		};
 		class Item5
 		{
+			className="cba_jr";
+			name="Community Base Addons - Joint Rails";
+			author="CBA Team";
+			url="https://www.github.com/CBATeam/CBA_A3";
+		};
+		class Item6
+		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item7
+		{
+			className="ace_scopes";
+			name="ACE3 - Scopes";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item8
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item9
+		{
+			className="ace_ballistics";
+			name="ACE3 - Ballistics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item10
+		{
+			className="ace_optics";
+			name="ACE3 - Optics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item11
+		{
+			className="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item12
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item13
 		{
 			className="A3_Weapons_F_Orange";
 			name="Arma 3 Orange - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item14
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item15
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item10
+		class Item16
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
@@ -6287,14 +6336,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3390.9961,5.2069721,1545.4598};
+				position[]={3390.9961,5.2069721,1545.46};
 				angles[]={0,3.9367821,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""<t color='#fb0000'>Heal Yourself</t>"",""call ace_medical_fnc_treatmentAdvanced_fullHeal;[2, [], {}, {}, 'Treating injuries, standby ....'] call ace_common_fnc_progressBar;""]; }";
+				init="call{this addAction [""<t color='#fb0000'>Heal Yourself</t>"",""call ace_medical_fnc_treatmentAdvanced_fullHeal;[2, [], {}, {}, 'Treating injuries, standby ....'] call ace_common_fnc_progressBar;""]; [this, false] call ace_dragging_fnc_setDraggable;[this, false] call ace_dragging_fnc_setCarryable; " \n "}";
 			};
 			id=104;
 			type="Land_PaperBox_01_small_closed_white_med_F";
@@ -6387,16 +6436,16 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=4;
+			nextID=3;
 		};
 		class Links
 		{
-			items=4;
+			items=3;
 			class Item0
 			{
 				linkID=0;
-				item0=3;
-				item1=50;
+				item0=4;
+				item1=51;
 				class CustomData
 				{
 					type="Sync";
@@ -6405,8 +6454,8 @@ class Mission
 			class Item1
 			{
 				linkID=1;
-				item0=4;
-				item1=51;
+				item0=5;
+				item1=52;
 				class CustomData
 				{
 					type="Sync";
@@ -6415,16 +6464,6 @@ class Mission
 			class Item2
 			{
 				linkID=2;
-				item0=5;
-				item1=52;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item3
-			{
-				linkID=3;
 				item0=6;
 				item1=53;
 				class CustomData

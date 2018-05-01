@@ -7,3 +7,7 @@ enableSaving [false, false];
 ["Fox", "Ambient Civs", { [[[], "scr\Civilians\Init.sqf"],"BIS_fnc_execVM",false,false] spawn BIS_fnc_MP;  }] call Ares_fnc_RegisterCustomModule;
 ["Fox", "Ambient Helis", { [[[], "scr\ambientHeli.sqf"],"BIS_fnc_execVM",false,false] spawn BIS_fnc_MP;  }] call Ares_fnc_RegisterCustomModule;
 ["Fox", "Ambient Traffic", { [[[], "scr\Traffic\Init.sqf"],"BIS_fnc_execVM",false,false] spawn BIS_fnc_MP;  }] call Ares_fnc_RegisterCustomModule;
+
+CHVD_allowNoGrass	= true;
+CHVD_maxView		= 12000;
+CHVD_maxObj			= 6000;
